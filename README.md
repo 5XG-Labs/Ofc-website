@@ -1,2 +1,2 @@
-# Ofc-website
-OS Frontend 
+# Official website
+Open source Frontend 
