@@ -1,2 +1,2 @@
 # Official website
-Open source Frontend built with Pure Html, & Js.
+Cool Open source Frontend.
