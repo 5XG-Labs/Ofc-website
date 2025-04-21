@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5XG Labs | Blockchain Education & Digital Security</title>
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5XG Labs | Blockchain Education & Digital Security</title>
+    <meta name="description" content="Peroxile (peroxiledev) - Open-source blockchain security & education at 5XG Labs">
+    <meta name="author" content="Peroxile">
+    <meta name="robots" content="index, follow"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="particles" id="particles-js"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="pxr">5XG</span><span class="labs">LABS</span>
+                <div class="logo-pulse"></div>
+            </div>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#resources" class="nav-link">Resources</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#resources" class="nav-link">Resources</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word title-word-1">EMPOWERING</span>
+                <span class="title-word title-word-2">YOUR</span>
+                <span class="title-word title-word-3">DIGITAL</span>
+                <span class="title-word title-word-4">SECURITY</span>
+            </h1>
+            <p class="hero-subtitle">Through decentralized technology and security fundamentals</p>
+            
+            <div class="hero-buttons">
+                <a href="#services" class="cta-button pulse-button">
+                    <span>Explore Services</span>
+                    <div class="button-pulse"></div>
+                </a>
+                <a href="#blockchain-demo" class="cta-button secondary-button">
+                    <span>Interactive Demo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+        
+        <div class="hero-blocks">
+            <div class="blockchain-visualization" id="blockchain-visualization">
+                <!-- Blocks added via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Demo -->
+    <section class="blockchain-demo" id="blockchain-demo">
+        <div class="container">
+            <h2 class="section-title">Blockchain Interactive Demo</h2>
+            <p class="section-subtitle">See how decentralized technology works in real-time</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <button id="add-block-btn" class="demo-button">
+                        <i class="fas fa-plus-circle"></i> Add Block
+                    </button>
+                    <button id="tamper-btn" class="demo-button">
+                        <i class="fas fa-exclamation-triangle"></i> Try to Tamper
+                    </button>
+                    <button id="reset-demo-btn" class="demo-button">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                <div class="demo-visualization">
+                    <div class="centralized-vs-decentralized">
+                        <div class="architecture centralized">
+                            <h3>Centralized</h3>
+                            <div class="server">
+                                <i class="fas fa-server"></i>
+                                <div class="single-point"></div>
+                            </div>
+                        </div>
+                        <div class="architecture decentralized">
+                            <h3>Decentralized</h3>
+                            <div class="nodes-container">
+                                <!-- Nodes added via JS -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="blockchain-container">
+                        <!-- Blocks added via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Building a more secure digital future</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Blockchain Education</h3>
+                    <p>Comprehensive courses on blockchain technology, cryptocurrencies, and decentralized applications.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Fundamentals</h3>
+                    <p>Essential security practices to protect your digital assets and personal information online.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                                <div class="service-card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Scalable Onchain Solutions</h3>
+                    <p>Scalable blockchain solutions built to handle growing demand—delivering high performance, security, and decentralization without compromise.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-on Workshops</h3>
+                    <p>Interactive sessions where you can apply what you learn in real-world scenarios.</p>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Check Tool -->
+    <section class="security-check" id="security-check">
+        <div class="container">
+            <h2 class="section-title">Digital Security Check</h2>
+            <p class="section-subtitle">Test your current security practices and get personalized recommendations</p>
+            
+            <div class="check-tool">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                
+                <div class="question-container">
+                    <!-- Questions loaded via JS -->
+                </div>
+                
+                <div class="tool-buttons">
+                    <button id="prev-question" class="tool-button" disabled>
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button id="next-question" class="tool-button">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+<div class="blockchain-carousel">
+  <div class="carousel-container">
+    <div class="carousel-slides">
+      <div class="slide active" data-index="0">
+        <h3>Blockchain Security 101</h3>
+        <p>Learn the fundamentals of cryptographic security in distributed ledgers.</p>
+        <button class="learn-more" data-topic="security-fundamentals">Learn More</button>
+      </div>
+      <div class="slide" data-index="1">
+        <h3>Smart Contract Auditing</h3>
+        <p>Discover how to identify vulnerabilities in Ethereum smart contracts.</p>
+        <button class="learn-more" data-topic="smart-contracts">Learn More</button>
+      </div>
+      <div class="slide" data-index="2">
+        <h3>Consensus Mechanisms</h3>
+        <p>Compare PoW, PoS and other consensus algorithms for security and efficiency.</p>
+        <button class="learn-more" data-topic="consensus">Learn More</button>
+      </div>
+    </div>
+    <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+    <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+    <div class="indicators"></div>
+  </div>
+</div>
+
+
+    <!-- Newsletter Section -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-wrapper">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h2>Stay Updated with 5XG Labs</h2>
+                    <p>Get the latest insights on blockchain and security delivered to your inbox</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="submit-button">
+                                Subscribe Now
+                            </button>
+                        </div>
+                        <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                        <div class="form-message"></div>
+                    </form>
+                </div>
+                <div class="newsletter-graphic">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="pxr">5XG</span><span class="labs">LABS</span>
+                    </div>
+                    <p>Empowering digital security through decentralized technology education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Open Source</a></li>
+                        <li><a href="#about">Patnerships</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Become a Contributor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="peroxile@tuta.io">5XG-Labs</a> </li>
+                        <li><i class="fas fa-map-marker-alt"></i> Decentralized, Everywhere</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2022 5XG Labs. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                        <!-- Blockchain Verification Badge -->
+        <div class="verification-badge">
+            <span>This portfolio is powered & verified by <a href="https://github.com/Sek5075" class="cp-log">Sek5075</a></span>
+            <i class="fas fa-shield-alt"></i>
+        </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
