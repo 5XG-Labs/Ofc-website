@@ -3,4 +3,4 @@ Allow: /           # Public frontend
 Disallow: /admin/  # Fx backend panels
 Disallow: /api/    # Fx API routes
 Disallow: /private/ # Fx auth-protected content
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://5xg-labs.github.io/Ofc-website/sitemap.xml
